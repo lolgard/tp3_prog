@@ -18,8 +18,30 @@ export function LoginPage(){
         }
             
     }
+
     return(
         <>
+            <div>
+                {error && (<div style={{color:"red"}}>{error}</div>)}
+                <form onSubmit={formSubmit}>
+
+                    <div>
+                        <label htmlFor="email">email</label>
+                        <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                    </div>
+
+                    <div>
+                        <label htmlFor="password">contraseña</label>
+                        <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+
+                    </div>
+
+                    <button type="submit">
+                        iniciar sesion
+                    </button>
+
+                </form>
+            </div>
         </>
     )
 }
