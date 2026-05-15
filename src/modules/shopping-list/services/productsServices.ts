@@ -1,6 +1,6 @@
 import type { Product, TCreateProduct, TUpdateProduct } from "../types"
 
-const API_URL ="http://localhost:3000/products"
+const API_URL ="http://localhost:3001/products"
 
 export const productsService = {
     
